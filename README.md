@@ -89,7 +89,7 @@ Built with [PlatformIO](https://platformio.org/) on the Arduino framework. Depen
 pip install platformio
 
 # 2. Clone
-git clone https://github.com/JohnnyJagatpal/ESPNightInfo.git
+git clone https://github.com/jjjsood/ESPNightInfo.git
 cd ESPNightInfo
 
 # 3. Build
@@ -119,7 +119,7 @@ cp include/secrets.h.example include/secrets.h
 #define SECRET_PASS "YOUR_WIFI_PASSWORD"
 ```
 
-> ⚠️ **Security note:** earlier commits hardcoded credentials directly in `main.cpp`. They are still readable in git history — scrub history (`git filter-repo` / BFG + force-push) **and change the WiFi password**, since anything pushed to a public repo must be treated as leaked.
+> ⚠️ **Security note:** never hardcode credentials in `main.cpp` or any tracked file. Anything pushed to a public repo must be treated as leaked, even after a history rewrite — rotate the secret, don't just delete it.
 
 ### 2. Location & field of view
 
