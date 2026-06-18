@@ -237,4 +237,4 @@ Weather and positions refresh once per hour; the display alternates scenes every
 
 ## 📄 License
 
-MIT — see `LICENSE` (add one if missing).
+MIT — see `LICENSE`.
